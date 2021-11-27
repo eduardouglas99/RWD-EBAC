@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './styles.scss';
 import imageDestaque from '../../images/imagem-destaque.png';
 import Pills from '../../components/Pills';
+import { useParams } from 'react-router';
+import { LocationContext } from '../../contexts/LocationContext';
 
 const PLACES = [
     'Praça',
@@ -15,12 +17,20 @@ const PLACES = [
     'Aquário'
 ]
 
-const Home = props => {
+const Home = () => {
+    const {city, state} = useParams()
     const [selectedPill, setSelectedPill] = useState('');
+
+    const { setCity, setState} = useContext(LocationContext);
+
+    useEffect(() => {
+        setCity(city)
+        setState(state)
+    }, [city, state])
     return(
         <main id="mainContent" className="home__container">
             <div className="home__col">
-                <h1 className="home__title">{props.city} para todos</h1>
+                <h1 className="home__title">{city} para todos</h1>
                 <div className="home__image home__image--destaque hide-desktop">
                     <img src={imageDestaque} alt="Imagem destaque cadeirante"/>
                 </div>

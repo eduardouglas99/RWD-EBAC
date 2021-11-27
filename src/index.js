@@ -7,20 +7,17 @@ import CuratorItem from './components/Curator';
 import Places from './components/Places';
 import Footer from './components/Footer';
 import Routes from './router';
-
-const CONFIG = {
-  state: "RJ",
-  city: "Rio de Janeiro"
-}
+import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
   <div className="main__wrapper">
     <div className="main__container">
-      <Header city={CONFIG.city} state={CONFIG.state}/>
-      <Routes city={CONFIG.city} state={CONFIG.state}/>
-      <Places/>
-      <CuratorItem/>
+      <BrowserRouter>
+        <Routes />
+        <Places/>
+        <CuratorItem/>
+      </BrowserRouter>
     </div>
     <Footer/>
     
