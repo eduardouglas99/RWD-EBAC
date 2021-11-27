@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './styles/global.scss';
+import Header from './components/Header';
+import Home from './pages/Home';
+import CuratorItem from './components/Curator';
+import Places from './components/Places';
+import Footer from './components/Footer';
+
+const CONFIG = {
+  state: "RJ",
+  city: "Rio de Janeiro"
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="main__wrapper">
+    <div className="main__container">
+      <Header city={CONFIG.city} state={CONFIG.state}/>
+      <Home city={CONFIG.city}/>
+      <Places/>
+      <CuratorItem/>
+    </div>
+    <Footer/>
+    
+  </div>
+  ,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

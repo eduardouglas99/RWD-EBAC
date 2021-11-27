@@ -1,0 +1,55 @@
+.card{
+
+    &__container{
+        width: 100%;
+        max-width: 222px;
+    }
+
+    &__image{
+        width: 100%;
+        height: 222px;
+        border: 1px solid var(--lightGreen);
+        border-radius: 1rem;
+    }
+
+    &__content{
+        padding: 1.6rem;
+
+        h3{
+            font-size: 2.3rem;
+            line-height: 2.695rem;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            margin: 0 0 1.8rem 0;
+            color: var(--darkBlack);
+            font-weight: 400;
+        }
+    }
+
+    &__facilities{
+
+        display: grid;
+        grid-template-columns: repeat(5, 3rem);
+        grid-gap: .5rem .5rem;
+        list-style-type: none;
+        margin: 1.1rem 0 1.4rem;
+
+        &__item{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--unchecked{
+                background-color: var(--lightGray);
+            }
+        }
+    }
+}

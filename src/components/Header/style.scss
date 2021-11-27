@@ -1,0 +1,59 @@
+.header {
+
+    &__container{
+        width: 100%;
+        margin: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+
+        &--ebac{
+           gap: 1.2rem;
+        }
+    }
+
+    &__city{
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        display: flex;
+        gap: 8px;
+        align-items: flex-end;
+        font-weight: 300;
+    }
+
+    &__span{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        font-weight: 400;
+    }
+
+    @media (max-width: 425px){
+        flex-wrap: wrap;
+
+        &__logo{
+            flex-wrap: wrap;
+
+            &--ebac{
+                width: 90px;
+                margin: 0 0 0 2rem;
+             }
+        }
+
+        &__city{
+            align-items: flex-end;
+            margin: 1rem 0 0 0;
+        }
+
+        &__span{
+            margin: 0 0 0.4rem 0;
+        }
+    }
+
+
+}

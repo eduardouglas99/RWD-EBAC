@@ -1,0 +1,79 @@
+@import '../../styles/responsive';
+
+.footer{
+
+    width: 100%;
+
+    &__component{
+
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            max-width: 666px;
+            width: 100%;
+        }
+    }
+
+    &__section{
+
+        padding: 2.5rem 0;
+
+        a{
+            color: #0070C1;
+            &:hover{
+                color: var(--blue);
+            }
+        }
+        
+        &--first{
+            background-color: var(--lightGreen);
+            font-size: 1.5rem;
+
+            p{
+                text-align: left;
+                line-height: 1.758rem;
+                max-width: 93.0rem;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        &--second{
+            background-color: var(--green);
+            color: var(--white);
+            font-size: 1.8rem;
+            padding: 2.8rem 0;
+        }
+
+        small{
+            font-weight: 400;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .button{
+        width: 3.0rem;
+        height: 3.0rem;
+        border-radius: 0.5rem;
+        background-color: #DAE8FC;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+
+        img{
+            width: 16px;
+        }
+    }
+
+    @media (max-width: $mobileSmall){
+        p{
+            font-size: 1.5rem !important;
+        }
+    }
+}

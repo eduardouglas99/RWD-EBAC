@@ -1,0 +1,46 @@
+.curator{
+
+    &__container{
+
+        width: 100%;
+        display: flex;
+        background: rgba(0, 182, 193, 0.5);;
+        padding: 2.6rem;
+        border-radius: 1.0rem;
+        justify-content: center;
+        align-items: center;
+        gap: 5.5rem;
+        margin: 6.0rem 0;
+    }
+    &__photo{
+
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: var(--white);
+        border: 1px solid var(--green);
+    }
+    &__details{
+        max-width: 54.5rem;
+        width: 100%;
+
+        div {
+            display: flex;
+            align-items: flex-end;
+
+            h3{
+                font-size: 2.0rem;
+            }
+            h6{
+                color: var(--darkGray);
+                font-size: 1.2rem;
+                margin: 0 0 0 0.4rem;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 1.3rem 0 0 0;
+            width: 100%;
+        }
+    }
+}

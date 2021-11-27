@@ -1,0 +1,57 @@
+@import '../../styles/responsive';
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.places{
+
+    &__header{
+        @include displayFlex;
+        align-items: center;
+        margin: 4.0rem 0 3.9rem 0;
+        width: 93%;
+    }
+
+    &__title{
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: var( --green);
+        span{
+            color: var(--black);
+        }
+    }
+
+    &__select{
+        @include displayFlex;
+        width: 22rem;
+        padding: 0.4rem 1.5rem;
+        max-width: 235px;
+        width: 100%;
+        border-bottom: 2px solid #000;
+        h5{
+            color: #706D6D;
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+        select{
+            border: 0 none;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: lowercase;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+
+    
+    @media (max-width: $mobileLarge){
+        &__header {
+            flex-wrap: wrap;
+        }
+        &__select{
+            margin: 1rem 0 0 0;
+        }
+    }
+}
