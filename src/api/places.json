@@ -4,7 +4,9 @@
             "id": 1,
             "name": "Museu da Língua Portuguesa",
             "image": "/places/museu-da-lingua-portuguesa.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Museu",
+            "description": "O Novo Museu da Língua Portuguesa está de volta com novas experiênciais.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "Location": {
                 "lat": "01234",
                 "long": "43210"
@@ -26,7 +28,9 @@
             "id": 2,
             "name": "Mercado Municipal",
             "image": "/places/marcado-municipal-sp.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Mercado",
+            "description": "O Novo Museu da Língua Portuguesa está de volta com novas experiênciais.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "Location": {
                 "lat": "01234",
                 "long": "43210"
@@ -47,8 +51,10 @@
         {
             "id": 3,
             "name": "Auditório Ibirapuera",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description": "O Novo Museu da Língua Portuguesa está de volta com novas experiênciais.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "image": "/places/auditorio-ibirapuera.png",
+            "category": "Teatro",
             "Location": {
                 "lat": "01234",
                 "long": "43210"
@@ -69,8 +75,10 @@
         {
             "id": 4,
             "name": "Museu de Artes de São Paulo",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description": "O Novo Museu da Língua Portuguesa está de volta com novas experiênciais.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "image": "/places/masp.png",
+            "category": "Museu",
             "Location": {
                 "lat": "01234",
                 "long": "43210"
@@ -91,8 +99,10 @@
         {
             "id": 5,
             "name": "Parque Independência",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description": "O Novo Museu da Língua Portuguesa está de volta com novas experiênciais.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "image": "/places/museu-da-lingua-portuguesa.png",
+            "category": "Parque",
             "Location": {
                 "lat": "01234",
                 "long": "43210"

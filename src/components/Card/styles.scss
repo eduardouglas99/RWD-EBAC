@@ -10,6 +10,7 @@
         height: 222px;
         border: 1px solid var(--lightGreen);
         border-radius: 1rem;
+        overflow: hidden;
     }
 
     &__content{
@@ -27,6 +28,7 @@
             margin: 0 0 1.8rem 0;
             color: var(--darkBlack);
             font-weight: 400;
+            height: 10rem;
         }
     }
 
@@ -51,5 +53,11 @@
                 background-color: var(--lightGray);
             }
         }
+    }
+
+    &__button {
+        display: inline-block;
+        text-decoration: none;
+        margin: 1rem auto 0;
     }
 }
