@@ -2,10 +2,6 @@ $mobileLarge: 425px;
 $mobileSmall: 300px;
 $desktop: 1023px;
 
-.hide-mobile {
-    display: none;
-}
-
 @media (max-width: $desktop){
     
     .hide-mobile {
